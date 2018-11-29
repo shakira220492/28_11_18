@@ -1,0 +1,115 @@
+<div id="configurationArea_1">
+    <div id="configurationArea_1BgColor">
+    </div>
+    <div id="configurationArea_1Content">
+
+        <div id='songIconContent'>
+            {{ include('@Song/Default/index.html.twig') }}
+        </div>
+
+        <div id='artistIconContent'>
+            {{ include('@Artist/Default/index.html.twig') }}
+        </div>
+
+    </div>
+</div>
+
+
+<div id="configurationArea_2">
+    <div id="configurationArea_2BgColor">
+    </div>
+    <div id="configurationArea_2Content">
+
+        <div id='profileIconContent'>
+            {{ include('@Profile/Default/index2.html.twig') }}
+        </div>
+
+        <div id='uploadVideoIconContent'>
+            {{ include('@UploadVideo/Default/index.html.twig') }}
+        </div>
+
+        <div id='editLyricsIconContent'>
+            {{ include('@EditLyrics/Default/index.html.twig') }}
+        </div>
+
+    </div>
+</div>
+
+        
+        
+        
+
+<script>
+    
+    window.onload = loadConfigurationArea();
+
+    function loadConfigurationArea()
+    {
+        var songIconContent = document.getElementById("songIconContent");
+        var artistIconContent = document.getElementById("artistIconContent");
+        var profileIconContent = document.getElementById("profileIconContent");
+        var uploadVideoIconContent = document.getElementById("uploadVideoIconContent");
+        var editLyricsIconContent = document.getElementById("editLyricsIconContent");
+
+        songIconContent.style.height = "100%"; // configurationArea_1 (by default)
+        artistIconContent.style.height = "0%"; // configurationArea_1
+        profileIconContent.style.height = "100%"; // configurationArea_2 (by default)
+        uploadVideoIconContent.style.height = "0%"; // configurationArea_2
+        editLyricsIconContent.style.height = "0%"; // configurationArea_2
+    }
+    
+    
+    var videoIconButton = document.getElementById('videoIconButton');
+    videoIconButton.addEventListener("click", show_editLyricsIconContent, false);
+    
+    var uploadVideoIconButton = document.getElementById('uploadVideoIconButton');
+    uploadVideoIconButton.addEventListener("click", show_uploadVideoIconContent, false);
+    
+    var profileIconButton = document.getElementById('infoAboutUser-session');
+    profileIconButton.addEventListener("click", show_profileIconContent, false);
+
+    
+    function show_uploadVideoIconContent()
+    {
+        var uploadVideoIconContent = document.getElementById('uploadVideoIconContent');
+        
+        if (uploadVideoIconContent.style.height === "0%")
+        {
+            uploadVideoIconContent.style.height = "100%";
+        } else
+        {
+            uploadVideoIconContent.style.height = "0%";
+        }
+    }
+    
+    function show_editLyricsIconContent()
+    {
+        var editLyricsIconContent = document.getElementById('editLyricsIconContent');
+        
+        if (editLyricsIconContent.style.height === "0%")
+        {
+            editLyricsIconContent.style.height = "100%";
+        } else
+        {
+            editLyricsIconContent.style.height = "0%";
+        }
+    }
+    
+    
+    
+    function show_profileIconContent()
+    {
+        alert("1");
+        var profileIconContent = document.getElementById('profileIconContent');
+
+        if (profileIconContent.style.height === "0%")
+        {
+            profileIconContent.style.height = "100%";
+        } else
+        {
+            profileIconContent.style.height = "100%";
+        }
+        alert("2");
+    }
+
+</script>

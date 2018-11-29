@@ -1,0 +1,110 @@
+#configurationArea_1 {
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 250px;
+    position: absolute;
+}
+
+#configurationArea_1BgColor {
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 250px;
+    background-color: gray;
+    opacity: 0.2;
+    position: absolute;
+}
+
+#configurationArea_1Content {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    color: white;
+    font-size: small;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+
+#configurationArea_2 {
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 250px;
+    width: 450px;
+    position: absolute;
+}
+
+#configurationArea_2BgColor {
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: gray;
+    opacity: 0.2;
+    position: absolute;
+}
+
+#configurationArea_2Content {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    color: white;
+    font-size: small;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+
+
+
+
+
+#songIconContent {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+#artistIconContent {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+#profileIconContent {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+#uploadVideoIconContent {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+#editLyricsIconContent {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
